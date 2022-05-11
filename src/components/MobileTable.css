@@ -1,0 +1,47 @@
+.mobileDiv{
+    position: relative;
+}
+.scrollable{
+    overflow:auto;
+    /*max-height: 300px;*/
+
+}
+
+.mobileTable{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #f3f3f3;
+    width: 100%;
+
+}
+
+.mobileTable tbody {
+    border-top: 40px solid white;
+}
+
+.mobileTable td, .mobileTable th {
+    border: 1px solid #d0d0d0;
+    min-width:60px;
+    padding: 10px;
+}
+
+.mobileTable th{
+    min-width:100px;
+}
+
+
+.mobileTable tbody:nth-child(even){background-color: #f1f1f1;}
+
+.mobileTable tr:hover {
+    background-color:#eaeaea;
+}
+
+.mobileTable th {
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #a4061f;
+    color: white;
+}
