@@ -1,16 +1,138 @@
 .popupActive{
-    height: 60px;
-     width:180px;
+    height:40px;
+    width:120px;
     color:white;
-    background-color: #a4061f;
+    background-color:#a4061f;
     font-size:20px;
     border:none;
-border-radius: 20px;
+    border-radius: 10px;
+    cursor: pointer;
 
 }
-.popupActive:hover{
+
+.popupActive:hover, .buttonConfirm:hover{
    color: #a4061f;
     background-color: white;
     border:2px solid #a4061f;
 
+}
+
+.container{
+    font-family:monospace;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap:2em;
+    flex-direction:column;
+}
+
+.modal:is(.small) {
+    width:380px;
+    height:200px;
+    border:1px solid #a4061f;
+    border-radius:5vh;
+    color: #a4061f;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+div:is(.medium) {
+    width:580px;
+    height:280px;
+    border:2px solid #a4061f;
+    border-radius:5vh;
+    color: #a4061f;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+div:is(.large) {
+    width:800px;
+    height:380px;
+    border:2px solid #a4061f;
+    border-radius: 5vh;
+    color: #a4061f;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    position: relative;
+    width:38vh;
+    height: 22vh;
+    border:2px solid #a4061f;
+    border-radius: 5vh;
+    color: #a4061f;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.modal-header{
+    width:100%;
+    height: 15%;
+    position:absolute;
+    top:4%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-footer{
+    height:25%;
+    width:100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    bottom: 6%;
+    position: absolute;
+
+}
+
+.buttonClose{
+    color:white;
+    background-color: #ababab;
+    height: 72%;
+    width: 26%;
+    font-size: x-large;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    padding: 0;
+}
+
+.buttonClose:hover{
+    color: #ababab;
+    background-color: white;
+    border:2px solid #ababab;
+
+}
+
+.buttonConfirm{
+    padding: 0;
+    height: 72%;
+    width: 26%;
+    color: white;
+    background-color: #a4061f;
+    font-size: x-large;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.resizeIcon{
+    position: absolute;
+    top: 100%;
+    right: 6%;
 }
