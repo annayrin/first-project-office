@@ -16,7 +16,7 @@ function App() {
 
     return (
     <div className="App">
-        <Dropdown />
+        <Header />
         <Table />
         <Modal />
     </div>
