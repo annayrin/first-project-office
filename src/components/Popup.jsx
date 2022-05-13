@@ -1,7 +1,7 @@
 import "./Popup.css";
 import {useEffect, useState} from "react";
 import {IoMdResize} from "react-icons/io";
-function Popup({active, close,popUpToButton}){
+function Popup({active, close,popUpToButton,resize}){
 
    // const sizes = ["small","medium", "large"];
 
@@ -9,40 +9,33 @@ function Popup({active, close,popUpToButton}){
 
     // eslint-disable-next-line no-restricted-globals
     function addClassName(current = event.target.name){
-        console.log(current)
+
         setClassName(`modal ${current}`)
     }
     function changeClassName(){
         return className;
     }
 
-    useEffect(()=>{
-        changeClassName();
-        },[className]
-
-    )
-
-    //    let i = 0;
-    // function changeTheSize(){
-    //     if(i === 4 ){
-    //         i=0;
-    //     }
-    //     i++;
-    //     console.log()
-    //     return sizes[i-1];
+    // useEffect(()=>{
+    //     console.log(resize)
+    //     setClassName(`modal ${resize}`)
+    //     },[resize]
     //
-    // }
+    // )
+
 
     if(!active){
         return null;
     }
 
     return(
+        <div>
         <div className="backdrop" onClick={ ()=>
             {close();
             popUpToButton();
             addClassName("modal")}
         }>
+        </div>
         <div className={changeClassName()}>
         {/*<div className="modal-content">*/}
             <div className="modal-header">

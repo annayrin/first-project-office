@@ -1,4 +1,5 @@
 .popupActive{
+    margin-top: 1em;
     height:40px;
     width:120px;
     color:white;
@@ -31,7 +32,7 @@
     width:380px;
     height:200px;
     border:1px solid #a4061f;
-    border-radius:5vh;
+    border-radius:1vh;
     color: #a4061f;
     display:flex;
     align-items: center;
@@ -41,7 +42,7 @@ div:is(.medium) {
     width:580px;
     height:280px;
     border:2px solid #a4061f;
-    border-radius:5vh;
+    border-radius:1vh;
     color: #a4061f;
     display:flex;
     align-items: center;
@@ -51,13 +52,14 @@ div:is(.large) {
     width:800px;
     height:380px;
     border:2px solid #a4061f;
-    border-radius: 5vh;
+    border-radius: 1vh;
     color: #a4061f;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 .modal{
+    margin-bottom: 50%;
     position: relative;
     width:450px;
     height:220px;
@@ -73,14 +75,15 @@ div:is(.large) {
 }
 
 .backdrop{
-    background-color: #e7e7e7;
-    min-width: 100%;
-    min-height: 100vh;
     top:0;
     right:0;
     left:0;
     bottom:0;
-display: flex;
+    background-color: #e7e7e7;
+    min-width: 100vh;
+    min-height: 100vh;
+    position:absolute;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -118,6 +121,7 @@ display: flex;
 }
 
 .buttonClose{
+    z-index: 100;
     color:white;
     background-color: #ababab;
     height: 72%;
@@ -137,6 +141,7 @@ display: flex;
 }
 
 .buttonConfirm{
+    z-index:100;
     padding: 0;
     height: 72%;
     width: 26%;
@@ -155,6 +160,7 @@ display: flex;
 }
 
 .sizeButton{
+    z-index:100;
    font-size: large;
     min-height: 25px;
     min-width: 25px;

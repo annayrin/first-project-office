@@ -8,7 +8,7 @@ function DesktopTable(){
 
     const [data, setData] = useState(dataObject);
     const headers = Object.keys(data[0]);
-    console.log(headers);
+
 
 
 
