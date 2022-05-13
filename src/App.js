@@ -8,6 +8,7 @@ import Popup from "./components/Popup";
 import Modal from "./components/Modal";
 import DropdownList from "./components/DropdownList";
 import Dropdown from "./components/Dropdown";
+import Header from "./components/Header";
 
 
 function App() {

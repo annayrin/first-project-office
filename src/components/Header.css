@@ -1,5 +1,8 @@
 .mainHeader{
     width: 100%;
- background-color: #ababab;
-    height: 80px;
+ background-color: rgba(164, 6, 31);
+    height: 40px;
+    position:sticky;
+    top: 0;
+    z-index: 1;
 }
