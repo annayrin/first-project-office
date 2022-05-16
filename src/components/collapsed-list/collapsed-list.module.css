@@ -1,0 +1,23 @@
+.collapsedList {
+    user-select: none;
+}
+
+.collapsedList ol > li {
+    color: #333;
+}
+
+.collapsedList ol > li > span {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.collapsedList ol > li::marker {
+    content: counters(list-item,'.') ' ';
+    color: grey;
+    font-weight: 600;
+}
+
+.insideList {
+
+}

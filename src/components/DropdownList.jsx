@@ -3,10 +3,11 @@ import {useEffect, useState} from "react";
 
 function DropdownList({showList, sendToDropdown}){
     const list =["Moscow", "London", "Erevan"];
+
     const [visible, setVisible] = useState(false)
 
     const [checkedState, setCheckedState] = useState(
-        new Array(list.length).fill(false)  //guardo los false, por si los chequea las cambie por tru
+        new Array(list.length).fill(false)  //guardo los false, por si los chequea las cambie por true
     );
 
     const [array, setArrayToParentTotal] = useState([]);
@@ -57,8 +58,6 @@ console.log(array);
                     <input
                         type="checkbox"
                         id={`checkbox-${index}`}
-                        // name={item}
-                        // value={item}
                          checked={checkedState[index]}
                          onChange={() => handleOnChange(index)}
                     />
